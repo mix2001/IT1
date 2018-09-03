@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Skjema</title>
+  </head>
+  <body>
+
+    <h1>Registreiningskjema til min konfirmasjon</h1>
+
+    <form action="register.html">
+      <label>Navn:</label>
+      <input type="text" name="navn" required>
+      <label>Født:</label>
+      <input type="date" name="alder">
+      <br>
+
+
+<br>
+<label>Hva ønsker du å spise</label>
+<br>
+      <input type="radio" value="taco" name="rbMat"required>Taco
+      <input type="radio" name="rbMat" value="Pizza">Pizza
+      <input type="radio" name="rbMat" value="Torsk">Torsk
+    <br>
+
+      <label>Hva vil du ha å drikke?</label>
+
+      <select name="velgDrikke" required>
+<option value="brus">Brus</option>
+<option value="vann">Vann</option>
+<option value="saft">Saft</option>
+<option value="Øl">Øl</option>
+      </select>
+      <br>
+<label>Passord:</label>
+      <input type="password" name="password" required>
+<button type="submit">Send inn</button>
+</form>
+
+  </body>
+</html>
