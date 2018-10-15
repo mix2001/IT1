@@ -67,6 +67,7 @@ border: 0;
 
  .active {
    background-color: darkgreen;
+   font-weight: bold;
  }
 
  h1 {
