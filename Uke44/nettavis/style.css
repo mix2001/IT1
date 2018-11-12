@@ -1,0 +1,74 @@
+body{
+  margin: 0;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px
+}
+
+.middelssak{
+  background-color: grey;
+  padding: 100px;
+  grid-column: span 2;
+  grid-row: span 2;
+
+}
+
+.litensak{
+  background-color: grey;
+  padding: 50px;
+}
+
+.storsak{
+  background-color: grey;
+  padding: 200px;
+  grid-column: span 3;
+}
+
+body {
+
+background-color: #f0f0f0;
+
+}
+
+
+ul {
+background-color: #333;
+list-style-type: none;
+overflow: hidden;
+padding: 0;
+
+}
+
+li {
+float: left;
+
+}
+
+.logo{
+  padding-left
+}
+
+li a {
+display: inline-block;
+color: white;
+text-decoration: none;
+padding: 10px;
+text-align: center;
+
+}
+
+a:hover{
+background-color: darkgreen;
+
+}
