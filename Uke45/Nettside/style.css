@@ -6,7 +6,7 @@ body{
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light";
   font-weight: 300;
 }
-ul {
+.navigation {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -17,13 +17,14 @@ ul {
     left: 0;
     top: 0;
     position: fixed;
+
 }
 
-li {
+.navigation>li {
     float: left;
 }
 
-li a, .dropbtn {
+.navigation>li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -31,7 +32,7 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+.navigation>li a:hover, .dropdown:hover .dropbtn {
     background-color: green;
 }
 
@@ -79,19 +80,55 @@ border: 0;
   float: right;
 }
 
-.main {
+main {
+margin-top: 75px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin-bottom: 200px;
+grid-gap: 7px;
+
+
+}
+.bilder>li{
 
 }
 
-.topnav a, .topnav input[type=text] {
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 7px;
+.search a, .search input[type=text] {
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 7px;
+  top: 10px;
 }
 
-.topnav {
-float: left;
-top:
+.search {
+  float: right;
+}
+
+footer{
+  bottom: 0;
+  position: relative;
+  float: left;
+  width: 100%;
+  margin: 0;
+
+}
+
+.FooterInfo{
+  background-color: lightgrey;
+
+
+}
+
+main>p{
+  padding: 10%;
+  background-color: green;
+
+}
+
+.span10{
+  grid-column: span 2;
+  grid-row: span 3;
+
 }
