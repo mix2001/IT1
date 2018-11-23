@@ -153,36 +153,20 @@ footer{
 
 
 .stortbilde{
-  grid-column: span 2;
-  grid-row: span 3;
-  width: 97%;
+  grid-column: span 3;
+  grid-row: span 2;
+  width: 100%;
 
 }
 
 .litebilde{
-  width: 71%;
+  width: 70%;
 }
 
-.Bilderside{
+.bilde-grid{
   grid-template-columns: 1fr 1fr 1fr;
-  display: grid;
+  display: flex;
   grid-gap: 10px;
-}
-
-.container {
-    position: relative;
-}
-
-/* Bottom right text */
-.text-block {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    opacity: 0.7;
 }
 
 .logo{
@@ -190,4 +174,20 @@ footer{
   padding-top: 5px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.container {
+  position: relative;
+  max-width: 60%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.container .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 20px; /* Some padding */
 }
