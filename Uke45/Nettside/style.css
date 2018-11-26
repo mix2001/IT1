@@ -1,10 +1,9 @@
 header{
 letter-spacing: 1.5px;
-text-transform:
 }
 
 body{
-  background-color: #f0f0f0;
+  background-color: #333333 ;
 }
 
 * {
@@ -21,24 +20,24 @@ body{
     background-color: #252525;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     width: 100%;
-    left: 0;
     top: 0;
     position: fixed;
     border-style: solid;
     border-width: 1.7px;
     border-color: #252525;
+    left: 0;
 
 }
 
 .navigation>li {
-    float: left;
-
+  float: left;
 }
+
 
 .navigation>li a, .dropbtn {
     display: inline-block;
     color: white;
-    padding: 20px 30px;
+    padding: 30px 30px;
     text-decoration: none;
 }
 
@@ -60,7 +59,7 @@ body{
         }
       }
 
-.active {
+#active {
   font-weight: bolder;
   border-top:#900C3F 1.7px solid;
   border-bottom:#900C3F 1.7px solid;
@@ -110,28 +109,30 @@ font-size: 16px;
 background-color: #252525;
 border: 0;
  }
-
+}
 /* Ekstra */
 
 
-
-.search {
-  float: right;
-}
-
 main {
-margin-top: 90px;
+margin-top: 150px;
 margin-bottom: 150px;
 display: grid;
 grid-gap: 7px;
+color: white;
 }
 
 .search a, .search input[type=text] {
   display: block;
   text-align: left;
-  width: 150px;
-  margin: 0;
+  width: 100%;
   padding: 7px;
+  padding-top: 10px;
+}
+
+#search{
+padding-top: 2%;
+padding-bottom: 2%;
+padding-right: 5%;
 }
 
 .search {
@@ -139,55 +140,95 @@ grid-gap: 7px;
 }
 
 footer{
+  color: white;
   bottom: 0;
   position: relative;
-  float: left;
   width: 100%;
   margin: 0;
-  background-color: lightgrey;
-  padding-top: 30px;
+  background-color: #252525;
+  padding-top: 10px;
   min-height: 100px;
   left: 0;
+  text-align: center;
 
 }
 
 
 .stortbilde{
-  grid-column: span 3;
-  grid-row: span 2;
+  grid-column: span 2;
+  grid-row: span 3;
   width: 100%;
 
 }
 
 .litebilde{
-  width: 70%;
+  width: 64%;
+  float: right;
 }
 
 .bilde-grid{
   grid-template-columns: 1fr 1fr 1fr;
-  display: flex;
+  display: grid;
   grid-gap: 10px;
 }
 
 .logo{
   width: 150px;
-  padding-top: 5px;
+  padding-top: 10%;
+  padding-bottom: 10%;
   padding-right: 10px;
   padding-left: 10px;
 }
 
-.container {
-  position: relative;
-  max-width: 60%; /* Maximum width */
-  margin: 0 auto; /* Center it */
+.overskrift{
+font-size: 100%;
 }
 
-.container .content {
-  position: absolute; /* Position the background text */
-  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
-  width: 100%; /* Full width */
-  padding: 20px; /* Some padding */
+.litenskrift{
+  font-size: 75%;
+  padding-bottom: 5px;
+}
+
+.mellomskrift{
+  font-size: 80%;
+}
+
+.toppalbum>ul {
+  list-style-type: none;
+  width: 500px;
+}
+
+.toppalbum>h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.toppalbum>li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+.toppalbum>li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+
+.toppalbum>li {
+  padding: 10px;
+  overflow: auto;
+}
+
+.toppalbum>li:hover {
+  background: #eee;
+}
+
+.toppablum>*{
+  margin: 0;
+  padding: 0;
+}
+
+.toppalbum>div{
+  margin:20px;
+}
+
+.toppalbum>ul>li>img{
+  width: 20%;
 }
