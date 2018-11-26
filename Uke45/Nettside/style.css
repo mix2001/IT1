@@ -109,13 +109,12 @@ font-size: 16px;
 background-color: #252525;
 border: 0;
  }
-}
+
 /* Ekstra */
 
-
-main {
-margin-top: 150px;
-margin-bottom: 150px;
+main{
+margin-top: 10%;
+margin-bottom: 10%;
 display: grid;
 grid-gap: 7px;
 color: white;
@@ -191,44 +190,36 @@ font-size: 100%;
 
 .mellomskrift{
   font-size: 80%;
+  font-weight: bolder;
 }
 
-.toppalbum>ul {
+* {margin: 0; padding: 0;}
+
+.toppalbum div {
+  margin: 20px;
+  left: 10;
+}
+
+.toppalbum ul {
   list-style-type: none;
   width: 500px;
 }
 
-.toppalbum>h3 {
-  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
-}
-
-.toppalbum>li img {
-  float: left;
+.toppalbum li img {
+  float: none;
   margin: 0 15px 0 0;
 }
 
-.toppalbum>li p {
-  font: 200 12px/1.5 Georgia, Times New Roman, serif;
-}
-
-.toppalbum>li {
+.toppalbum li {
   padding: 10px;
   overflow: auto;
 }
 
-.toppalbum>li:hover {
+.toppalbum li:hover {
   background: #eee;
+  cursor: pointer;
 }
 
-.toppablum>*{
-  margin: 0;
-  padding: 0;
-}
-
-.toppalbum>div{
-  margin:20px;
-}
-
-.toppalbum>ul>li>img{
-  width: 20%;
+.toppalbum img{
+  width: 150px;
 }
