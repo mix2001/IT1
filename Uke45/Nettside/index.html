@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Hjem</title>
   </head>
   <body>
@@ -28,16 +29,63 @@
     </header>
 
     <main>
-      <h1>Nyheter</h1>
-        <section>
-          <div class="bilde-grid">
-            <img src="bilder/teletubbies1.jpeg" class="stortbilde" alt="">
-            <img src="bilder/teletubbies1.jpeg" class="litebilde" alt="">
-            <img src="bilder/teletubbies1.jpeg" class="litebilde" alt="">
-            <img src="bilder/teletubbies1.jpeg" class="litebilde" alt="">
-           </div>
+      <h1>Hjem</h1>
+        <div class="toppBilde"></div>
+        <div class="underTekst">
+          <h1>Hva gjør vi?</h1>
+          <p>Vi tar for oss de beste og mest kjente sangene/albumene <br> og rangsjerer de etter våre proffesjonelle standarer.</p>
+        </div>
+      <section>
+        <div class="bakAnimasjon">
+          <center>
+            <div class="space">
+            <a href="toppalbum.html">
+              <h1>Album</h1>
+            </a>
+              <div class="w3-content">
+                <img class="mySlides w3-animate-fading picSize" src="bilder/Thugger.jpg" alt="">
+                <img class="mySlides w3-animate-fading picSize" src="bilder/Astroworld.jpg" alt="">
+              </div>
+            </div>
+            <a href="toppsanger.html">
+            <div class="lillaBakgrunn">
+              <h1>Sanger</h1>
+              </a>
+              <div class="w3-content">
+                <img class="mySlides1 w3-animate-fading picSize" src="bilder/WastedWRLD.jpg" alt="">
+                <img class="mySlides1 w3-animate-fading picSize" src="bilder/BadX.jpg" alt="">
+              </div>
+            </div>
+          </center>
+        </div>
+
+        <script type="text/javascript">
+
+        var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var y = document.getElementsByClassName("mySlides1");
+
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      y[i].style.display = "none";
+
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "inline-block";
+    y[slideIndex-1].style.display = "inline-block";
+
+    setTimeout(carousel, 10000);
+}
+        </script>
 
       </section>
+
+
     </main>
 
     <footer>

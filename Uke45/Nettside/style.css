@@ -26,7 +26,7 @@ body{
     border-width: 1.7px;
     border-color: #252525;
     left: 0;
-
+    z-index: 10;
 }
 
 .navigation>li {
@@ -113,11 +113,17 @@ border: 0;
 /* Ekstra */
 
 main{
-margin-top: 10%;
-margin-bottom: 10%;
+margin-top: 100px;
+margin-bottom: 100px;
 display: grid;
 grid-gap: 7px;
 color: white;
+}
+
+main>h1{
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .search a, .search input[type=text] {
@@ -154,19 +160,13 @@ footer{
 
 
 .stortbilde{
-  grid-column: span 2;
-  grid-row: span 3;
-  width: 100%;
-
-}
-
-.litebilde{
-  width: 64%;
-  float: right;
+  width: 300px;
+  grid-column: span 1;
+  text-align: center;
 }
 
 .bilde-grid{
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   display: grid;
   grid-gap: 10px;
 }
@@ -195,14 +195,10 @@ font-size: 100%;
 
 * {margin: 0; padding: 0;}
 
-.toppalbum div {
-  margin: 20px;
-  left: 10;
-}
-
 .toppalbum ul {
   list-style-type: none;
-  width: 500px;
+  width: 100%;
+  text-align: center;
 }
 
 .toppalbum li img {
@@ -217,9 +213,44 @@ font-size: 100%;
 
 .toppalbum li:hover {
   background: #eee;
+  color: darkgrey;
   cursor: pointer;
+  animation: fadeAndScale .3s ease-in;
 }
+
 
 .toppalbum img{
   width: 150px;
+}
+
+.toppBilde{
+  background-image: url(bilder/teletubbies1.jpeg);
+  width: 100%;
+  height: minmax(300px);
+  background-position: center;
+  background-size: cover;
+}
+
+.underTekst{
+width: 100%;
+height: 300px;
+color: white;
+text-align: center;
+background-color: #900C3F;
+padding: 70px 0;
+}
+
+.picSize{
+  width: 300px;
+}
+
+.lillaBakgrunn {
+width: 100%;
+background-color: #900C3F;
+padding: 20px;
+}
+
+.space {
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
