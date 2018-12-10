@@ -1,36 +1,20 @@
 <!DOCTYPE html>
 <html lang="nb" dir="ltr">
   <head>
-    <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <style media="screen">
-      .mySlides {display:none;}
-    </style>
+    <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <div class="w3-content w3-section" style="max-width:500px">
-  <img class="mySlides" src="bilder/teletubbies3.jpg" style="width:100%">
-  <img class="mySlides" src="bilder/teletubbies2.jpg" style="width:100%">
-  <img class="mySlides" src="bilder/teletubbies1.jpeg" style="width:100%">
-</div>
+    <header>
+      <div class="nav-bar">
+  <p>Adrian er dum</p>
+      </div>
+    </header>
+  <main>
 
-<script>
-var myIndex = 0;
-carousel();
+  </main>
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
 
   </body>
 </html>

@@ -190,7 +190,7 @@ font-size: 100%;
 
 .mellomskrift{
   font-size: 80%;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 * {margin: 0; padding: 0;}
@@ -213,7 +213,7 @@ font-size: 100%;
 
 .toppalbum li:hover {
   background: #eee;
-  color: darkgrey;
+  color: black;
   cursor: pointer;
   animation: fadeAndScale .3s ease-in;
 }
@@ -224,9 +224,9 @@ font-size: 100%;
 }
 
 .toppBilde{
-  background-image: url(bilder/teletubbies1.jpeg);
+  background-image: url(bilder/TrippieInStudio.jpg);
   width: 100%;
-  height: minmax(300px);
+  height: 300px;
   background-position: center;
   background-size: cover;
 }
@@ -253,4 +253,9 @@ padding: 20px;
 .space {
   padding-bottom: 50px;
   padding-top: 20px;
+}
+
+.center{
+  text-align: center;
+  width: 100%;
 }
