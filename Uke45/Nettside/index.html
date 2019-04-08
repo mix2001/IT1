@@ -2,6 +2,7 @@
 <html lang="nb" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Hjem</title>
@@ -10,6 +11,8 @@
     <header>
       <nav>
         <ul class="navigation">
+          <label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle">
           <li><img src="bilder/Logo.png" class="logo" alt="LOGO">
           </li>
           <li><a id="active" id="logospace" href="index.html">Hjem</a></li>
@@ -22,39 +25,44 @@
               </div>
             </div>
           </li>
-          <li><a href="nyheter.html">Nyheter</a></li>
+
           <li><a href="info.html">Kontakt</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-        <div class="toppBilde"></div>
-        <div class="toppBildeTekst">
-         <p class="bildetekst">Best i ...</p>
-         </div>
+      <div class="toppBilde"></div>
+      <div class="toppBildeTekst">
+        <p class="bildetekst">Best i rangjering</p>
+        <img src="Logo.png" alt="">
+      </div>
 
-
-        <div class="underTekst">
+      <div class="underTekst">
           <h1>Hva gjør vi?</h1>
-          <p>Vi tar for oss de beste og mest kjente sangene/albumene <br> og rangsjerer de etter våre proffesjonelle standarer.</p>
-        </div>
+          <p>Vi tar for oss de beste og mest kjente sangene/albumene <br> og rangsjerer de etter våre proffesjonelle standarer
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
       <section class="section">
         <div class="grid-object">
-            <a href="toppalbum.html">
-              <h1>Album</h1>
-            </a>
-                <img class="mySlides w3-animate-fading picSize" src="bilder/Thugger.jpg" alt="">
-                <img class="mySlides w3-animate-fading picSize" src="bilder/Astroworld.jpg" alt="">
-              </div>
-        <div class="grid-object">
+          <a href="toppalbum.html">
+            <h1>Album</h1>
+          </a>
+          <a href="toppalbum.html">
+          <img class="mySlides w3-animate-fading picSize" src="bilder/Thugger.jpg" alt="">
+          <img class="mySlides w3-animate-fading picSize" src="bilder/Astroworld.jpg" alt="">
+          </a>
+        </div>
+          <div class="grid-object">
           <a href="toppsanger.html">
-              <h1>Sanger</h1>
-              </a>
-                <img class="mySlides1 w3-animate-fading picSize" src="bilder/WastedWRLD.jpg" alt="">
-                <img class="mySlides1 w3-animate-fading picSize" src="bilder/BadX.jpg" alt="">
-            </div>
-        </section>
+            <h1>Sanger</h1>
+          </a>
+          <a href="toppsanger.html">
+            <img class="mySlides1 w3-animate-fading picSize" src="bilder/WastedWRLD.jpg" alt="">
+            <img class="mySlides1 w3-animate-fading picSize" src="bilder/BadX.jpg" alt="">
+          </a>
+        </div>
+      </section>
 
         <script type="text/javascript">
 

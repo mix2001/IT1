@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="fireBase.js"></script>
+    <title>Sign in</title>
+  </head>
+  <body>
+    <div class="logobox">
+      <div class="logo">
+        <img src="bilder/logo.png" alt="logo">
+      </div>
+    </div>
+    <main>
+      <div class="main-div">
+      <h3>Sign in</h3>
+      </div>
+
+      <div id="firebaseui-auth-container"></div>
+      <div class="white">
+
+      </div>
+    </main>
+
+    <footer>
+      <div class="footerInfo">
+        <p>All right reserve Musicshare ©</p>
+      </div>
+    </footer>
+    <script type="text/javascript">
+    let user;
+    function saveLogin(evt) {
+        evt.preventDefault();
+        // Legger inn tekst, user id , displayName, profilbilde
+        meldinger.push({
+            uid: user.uid,
+            displayName: user.displayName,
+            photoURL: user.photoURL,
+        });
+        skjema.reset();
+    }
+
+      // FirebaseUI config.
+      var uiConfig = {
+          signInSuccessUrl: 'index.html',
+          signInOptions: [
+          // Leave the lines as is for the providers you want to offer your users.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+          firebase.auth.EmailAuthProvider.PROVIDER_ID
+          ],
+          // tosUrl and privacyPolicyUrl accept either url string or a callback
+          // function.
+          // Terms of service url/callback.
+          tosUrl: '<your-tos-url>',
+          // Privacy policy url/callback.
+          privacyPolicyUrl: function() {
+          window.location.assign('<your-privacy-policy-url>');
+          }
+      };
+      // Initialize the FirebaseUI Widget using Firebase.
+      var ui = new firebaseui.auth.AuthUI(firebase.auth());
+      // The start method will wait until the DOM is loaded.
+      ui.start('#firebaseui-auth-container', uiConfig);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "test":{
+    "svar":"Svaret til oppgave 1",
+  },
+    "test1":{
+      "a":{
+        "svar":"test",
+        "svar2":"test",
+        "svar3":"test"
+        },
+    "b":{
+      "svar":"test"
+      }
+  }
+}

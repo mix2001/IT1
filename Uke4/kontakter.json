@@ -1,0 +1,14 @@
+{
+  "kontaktliste":{
+    "1":{
+      "firstName":"Mikkel",
+      "lastname":"Morland",
+      "telefon":97763505
+    },
+      "2":{
+        "firstName":"Mikkel",
+        "lastname":"Morland",
+        "telefon":97763505
+    }
+  }
+}

@@ -1,0 +1,63 @@
+header>nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+nav>a{
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+nav>a:hover{
+  background-color: white;
+}
+body{
+  background-color: green;
+}
+
+@media(max-width: 500px) {
+  header>nav{
+    flex-direction: column;
+
+  }
+
+}
+
+@media (max-width:1400px){
+body{
+  background-color: yellow;
+}
+
+}
+
+@media (max-width:1000px){
+body{
+  background-color: green;
+}
+
+}
+
+@media (max-width:800px){
+body{
+  background-color: red;
+}
+
+}
+
+@media (max-width:600px){
+body{
+  background-color: blue;
+}
+
+}
+
+.grid{
+  display: grid;
+  grid-template-columns:
+
+}
+
+img {
+  width: 200px;
+}
