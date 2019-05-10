@@ -13,7 +13,7 @@
     <header>
       <div class="logobox">
         <div class="logo">
-          <img src="bilder/logo.png" alt="logo">
+          <img src="Bilder/logo.png" alt="logo">
         </div>
       </div>
       <nav>
@@ -29,12 +29,15 @@
     <main>
       <div class="upload-box">
         <h2>Upload</h2>
-        <input type="text" id="songName" name="songName" placeholder="Song name...">
-        <input type="file" id="fileButton" multiple accept="audio/*">
-        <label class="button" for="fileButton">Select file</label>
-          <button class="button" type="button" onclick="uploadFile(fileButton)">Upload</button>
+        <input type="text" id="inpMusikkTekst" name="inpMusikkTekst" placeholder="Song name...">
+        <input type="file" id="inpFil" accept="audio/*">
+        <label class="button" for="inpFil">Select file</label>
+          <button class="button" id="uploadButton" type="button" onclick="lastOppMusikk()">Upload</button>
           <progress value="0" max="100" id="uploader">0%</progress>
       </div>
+      <section id="alleMusikkne usynlig">
+
+      </section>
 
     </main>
     <footer>
@@ -42,54 +45,7 @@
         <p>All right reserve Musicshare ©</p>
       </div>
     </footer>
-    <script type="text/javascript">
-    var uploader = document.getElementById('uploader');
-    var fileButton = document.getElementById('fileButton');
-    var songName = document.getElementById('songName')
-
-    //fileButton.addEventListener('change', );
-
-    function uploadFile(e){
-    //Get file
-    var file = e.files[0];
-
-    //Create storage reference
-    var storageRef = firebase.storage().ref('MusicUpload/' + songName.value);
-
-    //Upload file
-    var task = storageRef.put(file);
-
-    //Update progressbar
-    task.on('state_changed',
-
-    function progress(snapshot){
-    var percentage = (snapshot.bytesTransferred /
-    snapshot.totalBytes)* 100;
-    uploader.value = percentage;
-    },
-
-    function error(err) {
-
-    },
-
-    function complete(){
-
-    var postKey = firebase.database().ref('MusicUpload/').push().key;
-    var downloadURL = task.snapshot.downloadURL;
-    var updates = {};
-    var postData = {
-      name: songName,
-      url: downloadURL
-    };
-    updates['/MusicUpload/'+ postKey] = postData;
-    firebase.database().ref().update(updates)
-    }
-
-
-  );
-};
-
-
+    <script src="uploadSang.js">
 
     </script>
   </body>

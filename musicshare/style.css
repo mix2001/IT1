@@ -34,14 +34,18 @@ input, button{
   text-align: center;
   padding-top: 30px;
 }
-
+.footerContent{
+  min-height: calc(100vh - 70px);
+}
 .footerInfo{
-  position: absolute;
+  position: sticky;
   background-color: #f8f8f8;
   width: 100%;
   bottom: 0;
   left: 0;
+  margin-top: 50px;
   text-align: center;
+
 }
 
 .footerInfo p{
@@ -64,6 +68,7 @@ nav ul{
 
 nav{
   text-align: center;
+   box-shadow: 1px 10px 15px -1px #F8F8F8;
 }
 
 nav li{
@@ -101,7 +106,7 @@ color: #77dd77
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
 }
-#fileButton {
+#inpFil {
   display: none;
 }
 
@@ -137,4 +142,55 @@ color: #77dd77
 
 main source{
   margin-top: 200px;
+}
+
+main h1{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.mainbox {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 15px;
+  grid-column-gap: 10px;
+  margin-top: 150px;
+
+}
+
+.mainbox .box{
+  display: grid;
+  width: 90%;
+  height: 90%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 8px;
+  margin-left: 15px;
+}
+
+.mainbox img{
+  width: 50%;
+  max-width: 90px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+#alleMusikkne{
+  margin-top: 50px;
+  text-align: center;
+}
+
+#usynlig{
+  display: none;
 }
